@@ -1,5 +1,18 @@
 # SkinnerBox
 
+## System Dependencies
+
+1. python3
+2. python3-venv
+3. make
+
+## Install & Run
+
+```bash
+make # to install
+make run # to run
+```
+
 ## Design
 
 ```python
@@ -41,7 +54,11 @@ experiment.run()
 
 You declare the design of your experiemnt as a list of Trials. Each trial itself consists of a list of reinforcement schedules, and t, which indicates the length of the trial in seconds.
 
-When experiment.run() is called, a PyGame window is created, with a circular arrangement of options represented as circles, one corresponding to each schedule of reinforcement. On each circle is a number, corresponding to a numerical key on the keyboard. When a key is pressed, the corresponding circle briefly lights up in yellow, to indicate that it has been pressed.
+When experiment.run() is called, a PyGame window is created, with a circular arrangement of options represented as circles, one corresponding to each schedule of reinforcement:
+
+<img width="912" alt="image" src="https://user-images.githubusercontent.com/91145809/161195861-89c5e8a0-c5e2-44f8-8782-384389ea577f.png">
+
+On each circle is a number, corresponding to a numerical key on the keyboard. When a key is pressed, the corresponding circle briefly lights up in yellow, to indicate that it has been pressed.
 
 Here's what happens when a key is pressed:
 
