@@ -1,3 +1,6 @@
 *.ipynb
 env
 __pycache__
+.stash
+static
+data

@@ -49,7 +49,7 @@ def draw_score(window, x:float, y:float, score:int, score_color=COLOR_black):
 
 def draw_timer(window, x:float, y:float, t:int):
     td = timedelta(milliseconds=t)
-    seconds_string = str(td.total_seconds())
+    seconds_string = str(td.total_seconds()).split('.')[0]
     draw_text(window, x, y, seconds_string)
 
 def circle_coords(center_x:float, center_y:float, r:float, n:int, resolution:int=1000):
